@@ -29,4 +29,6 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.android.support:appcompat-v7:25.3.1'   // Minimum 23+ is required
     implementation 'com.github.yuzhiqiang1993:zxing:2.2.5'
+    implementation 'com.github.hotchemi:permissionsdispatcher:2.4.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
 }

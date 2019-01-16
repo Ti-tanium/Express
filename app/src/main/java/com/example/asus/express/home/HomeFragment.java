@@ -50,7 +50,6 @@ public class HomeFragment extends Fragment {
         // 扫描二维码/条码回传
         if (requestCode == REQUEST_CODE_SCAN && resultCode == RESULT_OK) {
             if (data != null) {
-
                 String content = data.getStringExtra(Constant.CODED_CONTENT);
                 mResult.setText("扫描结果为：" + content);
             }
