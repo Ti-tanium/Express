@@ -14,5 +14,8 @@
     <string name="network_error">Network Error!</string>
     <string name="register_success_toast">Successfully registered!</string>
     <string name="alert_user_exists">User Name already exists.</string>
+    <string name="login_first_alert">You Need to Log in First!</string>
+    <string name="warn_alert">Warning</string>
+    <string name="permission_denied_alert">You don\'t have Permission on this Package.</string>
 
 </resources>

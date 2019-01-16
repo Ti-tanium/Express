@@ -81,8 +81,6 @@ public class Utils {
         return Base64.encodeToString(b, Base64.DEFAULT);
     }
 
-
-
     /**
      * base64编码字符集转化成图片文件。
      *
