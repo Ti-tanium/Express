@@ -8,5 +8,6 @@
     <string name="log_out_toast">Sucessfully log out!</string>
     <string name="btn_log_out">Log out</string>
     <string name="login_note">press the button below to log in.</string>
+    <string name="btn_scan">Scan</string>
 
 </resources>

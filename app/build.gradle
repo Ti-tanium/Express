@@ -27,7 +27,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.android.support:design:27.1.1'
-    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
     implementation 'com.android.support:appcompat-v7:25.3.1'   // Minimum 23+ is required
     implementation 'com.github.yuzhiqiang1993:zxing:2.2.5'
 }
