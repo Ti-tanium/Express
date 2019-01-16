@@ -18,6 +18,7 @@ import com.example.asus.express.HttpAgent;
 import com.example.asus.express.R;
 import com.example.asus.express.Utils;
 import com.example.asus.express.config;
+import com.example.asus.express.register.RegisterActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -42,12 +43,18 @@ public class LoginFragment extends Fragment {
         mAccount=(EditText)view.findViewById(R.id.profile_account);
         mPassword=(EditText)view.findViewById(R.id.password);
         mLoginBtn=(Button)view.findViewById(R.id.Login_btn);
-        mRegisterLink=(TextView)view.findViewById(R.id.register_link);
+        mRegisterLink=(TextView)view.findViewById(R.id.login_register_link);
         getActivity().setTitle(getString(R.string.login));
         mLoginBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 new checkAuthrizationTask().execute();
+            }
+        });
+        mRegisterLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(RegisterActivity.newIntent(getActivity()));
             }
         });
         return view;
@@ -58,6 +65,10 @@ public class LoginFragment extends Fragment {
         protected String doInBackground(Void... voids) {
             String url= config.request_authrization+"?account="+mAccount.getText().toString();
             JSONObject jsonObject=new HttpAgent().fetchJSON(url);
+            if(jsonObject==null){
+                Utils.showAlertDialog(getString(R.string.alert),getString(R.string.unreachable_server),getActivity()).show();
+                return getString(R.string.network_error);
+            }
             String toastText=null;
             try{
                 String code=jsonObject.getString("code");

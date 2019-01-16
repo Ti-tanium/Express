@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.example.asus.express"
         minSdkVersion 19
-        targetSdkVersion 27
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -29,6 +29,4 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.android.support:appcompat-v7:25.3.1'   // Minimum 23+ is required
     implementation 'com.github.yuzhiqiang1993:zxing:2.2.5'
-    implementation 'com.github.hotchemi:permissionsdispatcher:2.4.0'
-    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
 }
