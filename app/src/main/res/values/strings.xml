@@ -17,5 +17,4 @@
     <string name="login_first_alert">You Need to Log in First!</string>
     <string name="warn_alert">Warning</string>
     <string name="permission_denied_alert">You don\'t have Permission on this Package.</string>
-
 </resources>
