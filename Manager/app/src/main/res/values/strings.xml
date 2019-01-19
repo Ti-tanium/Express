@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Manager</string>
+    <string name="home">Home</string>
+    <string name="me">me</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="login">Login</string>
+    <string name="log_out_toast">Sucessfully log out!</string>
+    <string name="btn_log_out">Log out</string>
+    <string name="login_note">press the button below to log in.</string>
+    <string name="btn_scan">Scan</string>
+    <string name="alert">Alert</string>
+    <string name="unreachable_server">Can\'t reach the server.</string>
+    <string name="network_error">Network Error!</string>
+    <string name="register_success_toast">Successfully registered!</string>
+    <string name="alert_user_exists">User Name already exists.</string>
+    <string name="login_first_alert">You Need to Log in First!</string>
+    <string name="warn_alert">Warning</string>
+    <string name="permission_denied_alert">You don\'t have Permission on this Package.</string>
+    <string name="alert_failed_add_permission">Failed to add permission.</string>
+    <string name="alert_no_postman">No Such Postman.</string>
+    <string name="alert_no_package">No such Package.</string>
+</resources>
