@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,12 +17,9 @@ import com.example.asus.manager.HttpAgent;
 import com.example.asus.manager.R;
 import com.example.asus.manager.Utils;
 import com.example.asus.manager.config;
-import com.example.asus.manager.model.Postman;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.List;
 
 public class MainFragment extends Fragment {
     private EditText mPostmanId;
