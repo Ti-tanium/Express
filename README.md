@@ -1,5 +1,11 @@
 # Express
 A Secure Express System based on QR code
+
+# Manager
+
+the app for manager to add/delete permissions.
+
+
 # How to run Server?
 
 1. open cmd.
